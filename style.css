@@ -1,0 +1,100 @@
+:root {
+    --bg-main-color: #371373;
+    --bg-main-dark-color: #240b4f;
+    --bg-main-light-color: #682bce;
+    --orange-color: #ff9600;
+    --pink-color: #ea3663;
+    --dark-pink-color: #aa2447;
+    --light-pink-color: #fa4f79;
+    --text-color: #110336;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font: 100%/1.6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--bg-main-color);
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 0;
+} 
+
+.page-title {
+    font: 1.5rem 'Lilita One', cursive;
+    color: #fff;
+}
+
+.btn {
+    font-size: 1.25rem;
+    color: #fff;
+    padding: .875rem 2rem;
+    background: var(--dark-pink-color);
+}
+
+.main {
+    flex: 1;
+}
+
+.container {
+    width: 840px;
+    height: 840px;
+    background: url('./img/calendar.png');
+    background-size: cover;
+    margin: auto;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, .15);
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    'd1 d2 d3 d4 d5'
+    'd6 d7 d8 d9 d10'
+    'd11 d12 d13 d14 d15'
+    'd16 d17 d18 d19 d20'
+    'd21 d22 d23 d24 d25';
+}
+
+.flipside-img {
+    background-image: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 120px 120px;
+    background-color: #fff;
+    border: 1px solid var(--bg-main-light-color);
+    box-shadow: 0 0 3px 3px rgba(#fff, .15);
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    cursor: pointer;
+}
+
+.flipside-img.active {
+    opacity: 1;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-main-dark-color);
+    padding: .5rem 0;
+    font: .875rem 'Solway', serif;
+    color: #fff;
+}
+
+.footer a {
+    font: .875rem 'Solway', serif;
+    color: #fff;
+}
