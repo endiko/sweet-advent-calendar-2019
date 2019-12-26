@@ -4,4 +4,4 @@ An [Advent calendar](https://en.wikipedia.org/wiki/Advent_calendar) is a special
 
 #### *Feel the Christmas vibes!* 😊
 
-### [Demo](http://endiko.ru/advent-calendar-2019/)
+### [Demo](https://sweet-advent-calendar-2019.netlify.com/)
